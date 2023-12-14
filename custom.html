@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Frogger</title>
+		<style>
+			body { margin: 0; }
+		</style>
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://unpkg.com/three@0.159.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.159.0/examples/jsm/"
+              }
+            }
+          </script>
+	</head>
+	<body>
+		<script type="module" src="/customize.js"></script>
+	</body>
+	<script>
+		document.body.onkeyup = function(e) {
+		if (e.key == "!" ||
+			e.code == "Digit1" ||      
+			e.keyCode == 49      
+		) {
+		  //your code
+		  window.location.replace("index.html");
+  
+		}
+	  }
+	  </script>
+</html>
